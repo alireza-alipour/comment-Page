@@ -1,0 +1,106 @@
+/*............................General...........................*/
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 13px;
+  background-color: hsl(210, 46%, 95%);
+  font-family: 'Barlow Semi Condensed', sans-serif;
+
+}
+
+/*..........................All the Boxes...........................*/
+
+.main-box{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) ;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 25px;
+  width: 85%;
+  margin: auto;
+  margin-top: 60px;
+}
+
+.box{
+  padding: 10px 30px;
+  border-radius: 10px;
+  color: hsl(219, 29%, 34%);
+}
+
+.box .heading{
+  font-weight: 600;
+  font-size: 19px;
+  clear: both;
+}
+
+.box .text, .box >h4{
+  color: hsl(0, 0%, 71%);
+}
+
+.box >h3, .box >h4{
+  line-height: 0.4;
+}
+
+.purple, .grey, .black{
+  color: hsl(0, 0%, 81%);
+}
+
+.purple .heading, .grey .heading, .black .heading{
+  color: hsl(0, 0%, 95%);
+}
+
+/*............................Profile Photo...........................*/
+
+.profile-photo{
+  border-radius: 50%;
+  border: 2px solid;
+  float: left;
+  width: 40px;
+  margin: 10px 10px 10px 0;
+}
+/*............................Purple...........................*/
+
+.purple{
+  background-color: hsl(263, 55%, 52%);
+  grid-column:1 / span 2;
+  grid-row: 1;
+  z-index: -1;
+}
+
+.quotation{
+  position: absolute;
+  z-index: -1;
+  padding-left: 330px;
+}
+
+/*............................Grey...........................*/
+
+.grey{
+background-color: hsl(217, 19%, 35%);
+grid-column: 3 ;
+}
+
+/*............................long White...........................*/
+
+.long-white{
+background-color: hsl(0, 0%, 100%);
+grid-column: 4;
+grid-row: 1 / span 2;
+
+}
+
+/*............................Short White...........................*/
+
+.short-white{
+background-color: hsl(0, 0%, 100%);
+grid-column: ;
+}
+
+/*............................Black...........................*/
+
+.black{
+ background-color: hsl(219, 29%, 14%);
+ grid-column: 2 / span 2 ;
+}
