@@ -8,19 +8,17 @@ body{
   font-size: 13px;
   background-color: hsl(210, 46%, 95%);
   font-family: 'Barlow Semi Condensed', sans-serif;
-
 }
 
 /*..........................All the Boxes...........................*/
 
 .main-box{
   display: grid;
-  grid-template-columns: repeat(4, 1fr) ;
+  grid-template-columns: repeat(4, 250px) ;
   grid-template-rows: 1fr 1fr;
   grid-gap: 25px;
-  width: 85%;
-  margin: auto;
-  margin-top: 60px;
+  width: 1075px;
+  margin: 20px auto 20px;
 }
 
 .box{
@@ -103,4 +101,102 @@ grid-column: ;
 .black{
  background-color: hsl(219, 29%, 14%);
  grid-column: 2 / span 2 ;
+}
+
+/*........................Responsive Tablet (1089px).........................*/
+
+@media (max-width: 1089px){
+  .main-box{
+    grid-template-columns: repeat(3, 250px) ;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 800px;
+  }
+
+  .purple{
+    grid-column:1 / span 2;
+    grid-row: 1;
+  }
+
+  .long-white{
+  grid-column: 1/ span 3;
+  grid-row: 3 ;
+  }
+
+  .grey{
+  grid-column:1 ;
+  grid-row: 2;
+  }
+
+}
+
+/*........................Responsive Tablet (827px).........................*/
+
+@media (max-width: 827px){
+  .main-box{
+    grid-template-columns: repeat(2, 250px) ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 525px;
+  }
+
+  .purple{
+    grid-column:1 / span 2;
+    grid-row: 1;
+  }
+
+  .long-white{
+    grid-column: 1/ span 2;
+    grid-row: 3;
+  }
+
+  .grey{
+    grid-row: 2;
+  }
+
+  .short-white{
+    grid-row: 2;
+  }
+
+  .black{
+    grid-column: 1 / span 2;
+    grid-row: 4;
+  }
+
+}
+
+/*........................Responsive Mobile (546px).........................*/
+
+@media (max-width: 546px){
+  .main-box{
+    grid-template-columns: 375px ;
+    grid-template-rows: repeat(5, 1fr);
+    width: 400px;
+  }
+
+  .quotation{
+    padding-left: 190px;
+  }
+
+  .purple{
+    grid-column:1 / 2;
+    grid-row: 1;
+  }
+
+  .long-white{
+    grid-column: 1/ 2;
+    grid-row: 5;
+  }
+
+  .grey{
+    grid-row: 3;
+  }
+
+  .short-white{
+    grid-row: 2;
+  }
+
+  .black{
+    grid-column: 1 / 2;
+    grid-row: 4;
+  }
+
 }
