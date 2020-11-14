@@ -25,6 +25,11 @@ body{
   padding: 10px 30px;
   border-radius: 10px;
   color: hsl(219, 29%, 34%);
+  box-shadow: 0 2px 8px hsl(219, 29%, 34%);
+}
+
+.box:hover{
+  box-shadow: 0 4px 8px hsl(219, 29%, 14%);
 }
 
 .box .heading{
@@ -45,7 +50,7 @@ body{
   color: hsl(0, 0%, 81%);
 }
 
-.purple .heading, .grey .heading, .black .heading{
+.grey .heading, .black .heading{
   color: hsl(0, 0%, 95%);
 }
 
@@ -64,20 +69,24 @@ body{
   background-color: hsl(263, 55%, 52%);
   grid-column:1 / span 2;
   grid-row: 1;
-  z-index: -1;
+}
+
+.purple .heading{
+  color: hsl(0, 0%, 95%);
+  position: relative;
+  z-index: 1;
 }
 
 .quotation{
   position: absolute;
-  z-index: -1;
   padding-left: 330px;
 }
-
 /*............................Grey...........................*/
 
 .grey{
 background-color: hsl(217, 19%, 35%);
 grid-column: 3 ;
+box-shadow: 0 4px 8px hsl(0, 0%, 71%);
 }
 
 /*............................long White...........................*/
@@ -93,7 +102,6 @@ grid-row: 1 / span 2;
 
 .short-white{
 background-color: hsl(0, 0%, 100%);
-grid-column: ;
 }
 
 /*............................Black...........................*/
